@@ -5,7 +5,7 @@
         Plugin URI: https://github.com/NoahY/q2a-accept-rate
         Plugin Update Check URI: https://github.com/NoahY/q2a-accept-rate/master/qa-plugin.php
         Plugin Description: Adds accept rate to meta
-        Plugin Version: 0.1
+        Plugin Version: 0.2
         Plugin Date: 2012-11-2
         Plugin Author: NoahY
         Plugin Author URI: 

@@ -23,7 +23,7 @@
 
 				$post_query = qa_db_query_sub(
 					'SELECT postid, selchildid FROM ^posts '.
-					'WHERE userid=# AND type=$',
+					'WHERE userid=# AND type=$ AND acount > 0',
 					$uid, 'Q'
 				);
 				
