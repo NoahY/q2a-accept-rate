@@ -35,7 +35,7 @@
 						$accepted++;
 				}
 				
-				$rate = round($accepted/$total*100);
+				$rate = 0==$total?100:round($accepted/$total*100);
 				
 				if(qa_opt('accept_plugin_shade')) {
 					if ($rate <= 50) {
