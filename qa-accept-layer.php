@@ -15,7 +15,7 @@
 
 			if($class == 'qa-q-view' && qa_opt('accept_plugin_show')) {
 
-				$handle = strip_tags($post['who']['data']);
+				$handle = strip_tags($post['raw']['handle']);
 				$uids = qa_handles_to_userids(array($handle));
 				$uid = $uids[$handle];
 				if(!$uid)
@@ -35,7 +35,7 @@
 						$accepted++;
 				}
 				
-				$rate = round($accepted/$total*100);
+				$rate = 0==$total?100:round($accepted/$total*100);
 				
 				if(qa_opt('accept_plugin_shade')) {
 					if ($rate <= 50) {
